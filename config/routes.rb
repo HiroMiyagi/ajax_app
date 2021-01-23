@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
-  #getのHTTPメソッド URL,to: 行き先#アクション名
-  get 'posts/new', to: 'posts#new'
+  root to: 'posts#index'
   post 'posts', to: 'posts#create'
 end
