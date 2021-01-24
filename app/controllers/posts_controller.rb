@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def checked
-    post = Post.find(param[:id])
+    post = Post.find(params[:id])
     if post.checked
       post.update(checked: false)
     else
